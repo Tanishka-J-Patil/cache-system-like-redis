@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  cache-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - JAVA_OPTS=-Xmx512m
+    networks:
+      - cache-network
+
+networks:
+  cache-network:
+    driver: bridge
