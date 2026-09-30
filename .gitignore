@@ -29,3 +29,17 @@ maven/
 .env
 .env.*
 !.env.example
+
+# Eclipse IDE
+.classpath
+.project
+.settings/
+.metadata/
+
+# Windows OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Crash logs
+hs_err_pid*
